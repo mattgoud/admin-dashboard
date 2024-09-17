@@ -1,0 +1,4 @@
+CLIENT_ID=your_client_id
+CLIENT_SECRET=your_client_secret
+API_URL=http://localhost:8001/admin-api
+TOKEN_URL=http://localhost:8001/admin-api/access_token

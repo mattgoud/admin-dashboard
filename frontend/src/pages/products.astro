@@ -1,0 +1,16 @@
+---
+import ProductList from '../components/vue/ProductList.vue';
+import { type Product } from '../components/vue/ProductList.vue';
+
+const productsData = await fetch('http://localhost:3000/products').then((response) => response.json());
+const products: Product[] = productsData.items;
+---
+
+<html>
+  <head>
+    <title>Products</title>
+  </head>
+  <body>
+    <ProductList products={products} client:load>
+  </body>
+</html>
